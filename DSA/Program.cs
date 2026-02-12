@@ -4,14 +4,20 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        // List<int> nums = [21, 31, 44, 45, 51, 56, 78, 99];
-        // var key = 51;
-        // // var largest = FindLargest(nums);
-        // // Console.WriteLine(largest);
-        // var index = BinarySearch(nums, key);
-        List<int> nums = [-1, -2, 4, -1, -2, 1, 5, -3];
-        var maxSum = MaximumSubArraySum(nums);
-        Console.WriteLine(maxSum);
+        // // List<int> nums = [21, 31, 44, 45, 51, 56, 78, 99];
+        // // var key = 51;
+        // // // var largest = FindLargest(nums);
+        // // // Console.WriteLine(largest);
+        // // var index = BinarySearch(nums, key);
+        // List<int> nums = [-1, -2, 4, -1, -2, 1, 5, -3];
+        // var maxSum = MaximumSubArraySum(nums);
+        // Console.WriteLine(maxSum);
+
+        var lt = new LeetCode();
+        List<int> nums = [2, 7, 11, 19, 23];
+        var target = 9;
+        var result = lt.LeetCodeProblems(nums, target);
+        Console.WriteLine(string.Join(", ", result));
     }
 
     private static int FindLargest(List<int> nums)
